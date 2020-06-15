@@ -1,0 +1,2 @@
+MAX30100_filters.c:4:7:dc_removal	0	static
+MAX30100_filters.c:12:7:butterworth_filter	24	static

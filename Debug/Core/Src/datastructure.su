@@ -1,0 +1,4 @@
+datastructure.c:10:13:date_init	24	static
+datastructure.c:20:9:hr_ox_init	24	static
+datastructure.c:30:6:hr_ox_increment	16	static
+datastructure.c:35:6:date_increment	16	static

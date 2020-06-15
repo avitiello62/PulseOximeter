@@ -1,0 +1,10 @@
+log.c:22:6:log_transmit	80	static
+log.c:29:6:log_system_boot	0	static
+log.c:34:6:log_system_configuration_loaded	0	static
+log.c:38:6:log_system_activated	0	static
+log.c:41:6:log_system_deactivated	0	static
+log.c:44:6:log_low_heart_rate_alarm	0	static
+log.c:47:6:log_high_heart_rate_alarm	0	static
+log.c:50:6:log_mqtt_errors	0	static
+log.c:53:6:log_mqtt_connection_established	0	static
+log.c:56:6:log_mqtt_connection_closed	0	static

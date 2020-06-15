@@ -1,0 +1,4 @@
+configuration.c:22:15:configuration_init	16	static
+configuration.c:32:5:load_conf	104	dynamic
+configuration.c:61:5:save_conf	48	dynamic
+configuration.c:78:9:read_conf_from_buffer	8	static

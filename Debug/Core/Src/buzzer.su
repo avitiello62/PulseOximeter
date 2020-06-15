@@ -1,0 +1,6 @@
+buzzer.c:16:19:buzzer_low_hr	16	static
+buzzer.c:23:19:buzzer_high_hr	16	static
+buzzer.c:30:19:buzzer_low_ox	16	static
+buzzer.c:37:19:buzzer_high_ox	16	static
+buzzer.c:44:6:buzzer_beep	8	static
+buzzer.c:56:6:buzzer_check	16	static

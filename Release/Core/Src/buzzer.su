@@ -1,0 +1,6 @@
+buzzer.c:12:19:BUZZER_LOW_HR	0	static
+buzzer.c:19:19:BUZZER_HIGH_HR	0	static
+buzzer.c:26:19:BUZZER_LOW_OX	0	static
+buzzer.c:33:19:BUZZER_HIGH_OX	0	static
+buzzer.c:40:6:BUZZER_BEEP	24	static
+buzzer.c:51:6:BUZZER_CHECK	16	static

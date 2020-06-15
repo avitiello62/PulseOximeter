@@ -1,0 +1,8 @@
+mqtt_log.c:29:5:send_mqtt	24	static
+mqtt_log.c:43:6:mqtt_set_hearth_rate	0	static
+mqtt_log.c:46:6:mqtt_set_oximeter	0	static
+mqtt_log.c:49:6:mqtt_set_server	0	static
+mqtt_log.c:18:6:mqtt_init_communication	8	static
+mqtt_log.c:53:5:mqtt_is_started	0	static
+mqtt_log.c:56:6:mqtt_get_ack	0	static
+mqtt_log.c:61:6:mqtt_check_state	8	static

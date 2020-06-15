@@ -1,0 +1,4 @@
+eeprom_i2c.c:17:5:write_bytes	48	static
+eeprom_i2c.c:25:5:read_bytes	48	static
+eeprom_i2c.c:48:5:write_string	56	dynamic
+eeprom_i2c.c:56:5:read_string	56	dynamic

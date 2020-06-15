@@ -1,0 +1,8 @@
+MAX30100.c:76:5:MAX30100_getID	32	static
+MAX30100.c:84:6:MAX30100_setup	48	static
+MAX30100.c:97:6:MAX30100_clearFIFO	40	static
+MAX30100.c:108:6:MAX30100_reset	40	static
+MAX30100.c:117:6:MAX30100_shutdown	40	static
+MAX30100.c:128:6:MAX30100_interrupt_enable	48	static
+MAX30100.c:54:8:MAX30100_init	8	static
+MAX30100.c:142:6:MAX30100_read_sensor	48	static

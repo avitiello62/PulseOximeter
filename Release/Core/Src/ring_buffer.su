@@ -1,0 +1,6 @@
+ring_buffer.c:3:6:RingBuffer_Init	0	static
+ring_buffer.c:10:8:addByte	0	static
+ring_buffer.c:22:8:getByte	0	static
+ring_buffer.c:35:8:RingBuffer_Write	24	static
+ring_buffer.c:50:8:RingBuffer_Read	24	static
+ring_buffer.c:63:9:RingBuffer_GetDataLength	0	static
