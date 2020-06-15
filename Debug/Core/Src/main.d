@@ -35,7 +35,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/eeprom_i2c.h ../Core/Inc/ring_buffer.h \
  ../Core/Inc/mqtt_log.h ../Core/Inc/lcd.h ../Core/Inc/log.h \
  ../Core/Inc/datastructure.h ../Core/Inc/MAX30100.h \
- ../Core/Inc/MAX30100_spo2_calculator.h
+ ../Core/Inc/MAX30100_spo2_calculator.h ../Core/Inc/buzzer.h
 
 ../Core/Inc/main.h:
 
@@ -134,3 +134,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/MAX30100.h:
 
 ../Core/Inc/MAX30100_spo2_calculator.h:
+
+../Core/Inc/buzzer.h:

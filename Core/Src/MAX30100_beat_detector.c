@@ -15,13 +15,11 @@ void beat_detector() {
 	ts_last_beat = 0;
 }
 
-int add_sample(float sample)
-{
+int add_sample(float sample) {
 	return check_for_beat(sample);
 }
 
-float get_rate()
-{
+float get_rate() {
 	if (beat_period != 0) {
 		return 1 / beat_period * 1000 * 60;
 	} else {
@@ -29,19 +27,17 @@ float get_rate()
 	}
 }
 
-float get_current_threshold()
-{
+float get_current_threshold() {
 	return threshold;
 }
 
-int check_for_beat(float sample)
-{
+int check_for_beat(float sample) {
 	int beat_detected = 0;
 	float delta;
 	switch (beat_state) {
 	case BEATDETECTOR_STATE_INIT:
 		if (millis() > BEATDETECTOR_INIT_HOLDOFF) {
-//                state = BEATDETECTOR_STATE_WAITING;   
+
 			beat_state = BEATDETECTOR_STATE_WAITING;
 		}
 		break;
@@ -49,7 +45,7 @@ int check_for_beat(float sample)
 	case BEATDETECTOR_STATE_WAITING:
 		if (sample > threshold) {
 			threshold = min_check(sample, BEATDETECTOR_MAX_THRESHOLD);
-//                state = BEATDETECTOR_STATE_FOLLOWING_SLOPE;   
+
 			beat_state = BEATDETECTOR_STATE_FOLLOWING_SLOPE;
 		}
 
@@ -64,7 +60,7 @@ int check_for_beat(float sample)
 
 	case BEATDETECTOR_STATE_FOLLOWING_SLOPE:
 		if (sample < threshold) {
-//                state = BEATDETECTOR_STATE_MAYBE_DETECTED;   
+
 			beat_state = BEATDETECTOR_STATE_MAYBE_DETECTED;
 		} else {
 			threshold = min_check(sample, BEATDETECTOR_MAX_THRESHOLD);
@@ -74,10 +70,10 @@ int check_for_beat(float sample)
 	case BEATDETECTOR_STATE_MAYBE_DETECTED:
 		if (sample + BEATDETECTOR_STEP_RESILIENCY < threshold) {
 			// Found a beat
-//                beatDetected = true;   
+
 			beat_detected = 1;
 			last_max_value = sample;
-//                state = BEATDETECTOR_STATE_MASKING;   
+
 			beat_state = BEATDETECTOR_STATE_MASKING;
 
 			delta = millis() - ts_last_beat;
@@ -89,14 +85,14 @@ int check_for_beat(float sample)
 
 			ts_last_beat = millis();
 		} else {
-//                state = BEATDETECTOR_STATE_FOLLOWING_SLOPE;   
+
 			beat_state = BEATDETECTOR_STATE_FOLLOWING_SLOPE;
 		}
 		break;
 
 	case BEATDETECTOR_STATE_MASKING:
 		if (millis() - ts_last_beat > BEATDETECTOR_MASKING_HOLDOFF) {
-//                state = BEATDETECTOR_STATE_WAITING;   
+
 			beat_state = BEATDETECTOR_STATE_WAITING;
 		}
 		decrease_threshold();
@@ -106,14 +102,14 @@ int check_for_beat(float sample)
 	return beat_detected;
 }
 
-void decrease_threshold() //void BeatDetector::decreaseThreshold()
-{
-	// When a valid beat rate readout is present, target the
+void decrease_threshold() {
+
 	if (last_max_value > 0 && beat_period > 0) {
-		threshold -= last_max_value * (1 - BEATDETECTOR_THRESHOLD_FALLOFF_TARGET)
+		threshold -= last_max_value
+				* (1 - BEATDETECTOR_THRESHOLD_FALLOFF_TARGET)
 				/ (beat_period / BEATDETECTOR_SAMPLES_PERIOD);
 	} else {
-		// Asymptotic decay
+
 		threshold *= (float) BEATDETECTOR_THRESHOLD_DECAY_FACTOR;
 	}
 
@@ -124,5 +120,5 @@ void decrease_threshold() //void BeatDetector::decreaseThreshold()
 
 int min_check(int a, int b) {
 	return (a > b) ? b : a;
-}   
-   
+}
+

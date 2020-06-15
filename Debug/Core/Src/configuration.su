@@ -1,5 +1,5 @@
-configuration.c:21:15:configuration_init	24	static
-configuration.c:31:5:load_conf	112	dynamic
-configuration.c:60:5:save_conf	48	dynamic
-configuration.c:77:9:read_conf_from_buffer	16	static
-configuration.c:81:6:configuration_check_tr	16	static
+configuration.c:12:15:configuration_init	24	static
+configuration.c:24:5:load_conf	192	static
+configuration.c:54:5:save_conf	112	static
+configuration.c:73:9:read_conf_from_buffer	16	static
+configuration.c:79:6:conf_buffer_transfer	112	static

@@ -11,12 +11,11 @@
 #include "datastructure.h"
 #include "ring_buffer.h"
 
-
 #define SYSTEM_BOOT ((uint8_t*)"SYSTEM BOOT\t")
 #define SYSTEM_CONFIGURATION_LOADED ((uint8_t*)"SYSTEM CONFIGURATION LOADED\t")
 #define SYSTEM_ACTIVATED ((uint8_t*)"SYSTEM ACTIVATED\t")
 #define SYSTEM_DEACTIVATED ((uint8_t*)"SYSTEM DEACTIVATED\t")
-#define LOW_HEART_RATE_ALARM ((uint8_t*)"LOW HEART RATE ALARM\t")
+#define LOW_HEART_RATE_ALARM ((uint8_t*)"LOW HEART RATE ALARM ")
 #define HIGH_HEART_RATE_ALARM ((uint8_t*)"HIGH HEART RATE ALARM\t")
 #define MQTT_ERRORS ((uint8_t*)"MQTT ERRORS\t")
 #define MQTT_CONNECTION_ESTABLISHED ((uint8_t*)"MQTT CONNECTION ESTABLISHED\t")
@@ -35,13 +34,7 @@
 #define MQTT_CONNECTION_CLOSED_SIZE (23)
 #define MQTT_MESSAGE_SENT_SIZE (18)
 
-
-
 #define TIME_INCREMENT (10)
-
-
-
-
 
 void log_status(uint8_t hr, uint8_t ox);
 void log_system_boot(void);
@@ -53,5 +46,7 @@ void log_high_heart_rate_alarm(void);
 void log_mqtt_errors(void);
 void log_mqtt_connection_established(void);
 void log_mqtt_connection_closed(void);
+void log_mqtt_message_sent(void);
 void log_transmit(void);
+void configuration_check_tr(hr_ox_t hr_ox);
 #endif /* INC_LOG_H_ */

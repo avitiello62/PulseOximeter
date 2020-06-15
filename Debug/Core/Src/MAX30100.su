@@ -1,9 +1,8 @@
-MAX30100.c:56:8:MAX30100_init	16	static
-MAX30100.c:80:5:MAX30100_getID	32	static
-MAX30100.c:88:6:MAX30100_setup	32	static
-MAX30100.c:101:6:MAX30100_clearFIFO	32	static
-MAX30100.c:112:6:MAX30100_reset	32	static
-MAX30100.c:121:6:MAX30100_shutdown	32	static
-MAX30100.c:132:6:MAX30100_interrupt_enable	32	static
-MAX30100.c:146:6:MAX30100_read_sensor	32	static
-MAX30100.c:168:7:MAX30100_mean_diff	24	static
+MAX30100.c:53:8:MAX30100_init	16	static
+MAX30100.c:77:5:MAX30100_getID	32	static
+MAX30100.c:86:6:MAX30100_setup	32	static
+MAX30100.c:100:6:MAX30100_clearFIFO	32	static
+MAX30100.c:114:6:MAX30100_reset	32	static
+MAX30100.c:125:6:MAX30100_shutdown	32	static
+MAX30100.c:136:6:MAX30100_interrupt_enable	32	static
+MAX30100.c:154:6:MAX30100_read_sensor	32	static

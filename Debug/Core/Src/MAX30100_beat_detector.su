@@ -1,7 +1,7 @@
 MAX30100_beat_detector.c:10:6:beat_detector	4	static
 MAX30100_beat_detector.c:18:5:add_sample	16	static
-MAX30100_beat_detector.c:23:7:get_rate	4	static
-MAX30100_beat_detector.c:32:7:get_current_threshold	4	static
-MAX30100_beat_detector.c:37:5:check_for_beat	32	static
-MAX30100_beat_detector.c:109:6:decrease_threshold	24	static
-MAX30100_beat_detector.c:125:5:min_check	16	static
+MAX30100_beat_detector.c:22:7:get_rate	4	static
+MAX30100_beat_detector.c:30:7:get_current_threshold	4	static
+MAX30100_beat_detector.c:34:5:check_for_beat	32	static
+MAX30100_beat_detector.c:105:6:decrease_threshold	24	static
+MAX30100_beat_detector.c:121:5:min_check	16	static

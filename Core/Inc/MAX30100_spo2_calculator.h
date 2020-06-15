@@ -5,8 +5,7 @@
 
 #define CALCULATE_EVERY_N_BEATS (3)
 
-struct SpO2Calculator_s
-{
+struct SpO2Calculator_s {
 	float ir_ACvalue_sq_sum;
 	float red_ACvalue_sq_sum;
 	uint8_t beats_detected_num;
@@ -15,8 +14,9 @@ struct SpO2Calculator_s
 };
 typedef struct SpO2Calculator_s SpO2Calculator_t;
 
-void spo2_update(float irACValue, float redACValue, int beatDetected, SpO2Calculator_t* SpO2Calculator);
-void spo2_reset(SpO2Calculator_t* SpO2Calculator);
+void spo2_update(float irACValue, float redACValue, int beatDetected,
+		SpO2Calculator_t *SpO2Calculator);
+void spo2_reset(SpO2Calculator_t *SpO2Calculator);
 uint8_t get_spo2(SpO2Calculator_t SpO2Calculator);
 
 #endif

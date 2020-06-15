@@ -32,7 +32,8 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
  ../Core/Inc/stm32f4xx_it.h ../Core/Inc/log.h ../Core/Inc/datastructure.h \
  ../Core/Inc/ring_buffer.h ../Core/Inc/main.h ../Core/Inc/lcd.h \
  ../Core/Inc/datastructure.h ../Core/Inc/mqtt_log.h \
- ../Core/Inc/ring_buffer.h ../Core/Inc/configuration.h ../Core/Inc/log.h
+ ../Core/Inc/ring_buffer.h ../Core/Inc/configuration.h ../Core/Inc/log.h \
+ ../Core/Inc/buzzer.h ../Core/Inc/MAX30100.h
 
 ../Core/Inc/main.h:
 
@@ -117,3 +118,7 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
 ../Core/Inc/configuration.h:
 
 ../Core/Inc/log.h:
+
+../Core/Inc/buzzer.h:
+
+../Core/Inc/MAX30100.h:
